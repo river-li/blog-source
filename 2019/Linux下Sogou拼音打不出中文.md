@@ -1,0 +1,37 @@
+---
+title: Linux下Sogou拼音打不出中文
+copyright: true
+mathjax: true
+date: 2019-07-07 19:00:13
+tags:
+- linux
+categories:
+---
+
+
+在Manjaro Linux下面装上SogouPinyin之后就发现能调出来界面
+
+但是打不出来中文
+
+如果切换到谷歌的拼音输入法就可以用
+
+前一段时间一直都在凑合用，但是在需要输入很多文本的时候
+
+没有词库实在还是不方便
+
+今天就搞了一下
+
+这个比较简单，就不隐藏起来了
+
+```bash
+sogou-qimpanel
+```
+在终端里面输这个会展示信息
+
+发现出现的内容提示缺少一个和qt相关的库
+
+安装`fcitx-qt4`即可解决
+
+所以说可以发现是搜狗在linux的输入法比较老，用QT4的环境下没问题
+
+但是最近fcitx都已经升级到QT5了，所以就凉了
