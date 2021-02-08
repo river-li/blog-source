@@ -1,13 +1,3 @@
----
-title: Linux下Sogou拼音打不出中文
-copyright: true
-mathjax: true
-date: 2019-07-07 19:00:13
-tags:
-- linux
-categories:
----
-
 
 在Manjaro Linux下面装上SogouPinyin之后就发现能调出来界面
 
