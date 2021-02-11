@@ -196,7 +196,7 @@ pwndbg在mac上主要有两种安装方法，一是直接装pwndbg；二是使�
 直接安装pwndbg的话clone下来repo之后需要修改一点点东西
 
 ```bash
-git clone https://githb.com/pwndbg/pwndbg
+git clone https://github.com/pwndbg/pwndbg
 cd pwndbg
 vim setup.sh
 ./setup.sh
