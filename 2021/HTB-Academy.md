@@ -22,6 +22,10 @@ vim /etc/hosts
 10.10.10.215 academy.htb
 ```
 
+
+
+## www-data
+
 之后在访问发现就是一个登录窗口
 
 ![image-20210220003412088](https://static.hack1s.fun/images/2021/02/19/image-20210220003412088.png)
@@ -72,6 +76,10 @@ nc -lvvp 1234
 
 但是不知道为啥有连接，但是没有办法交互，只能用exp慢慢执行命令了
 
+
+
+## user
+
 发现在`/var/www/html/academy/.env`里面有一些配置的密码
 
 ![image-20210220015942316](https://static.hack1s.fun/images/2021/02/19/image-20210220015942316.png)
@@ -85,6 +93,10 @@ nc -lvvp 1234
 这里面用这个密码连`cry0l1t3`这个用户发现可以ssh连上
 
 之后就拿到user.txt的flag
+
+
+
+## root
 
 想要查看passwd，结果发现这个用户不在wheel组，没有sudo权限
 
