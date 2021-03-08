@@ -16,7 +16,7 @@ Unix就不说了,用起来肯定是比Windows舒服的
 今天就要在Linux上配置一个比Mac还要好用的触摸板
 
 
-<!--more-->
+
 
 
 ## 安装包
@@ -39,7 +39,7 @@ sudo pacman -S libinput xdotool xinput xf86-input-libinput libinput-gestures
 xinput list
 ```
 
-![1.png][1]
+![1](https://static.hack1s.fun/images/2021/02/24/1e686084852ac6569.png)
 
 在这个图里还显示了键盘的设备,还有连的一个微软的无线鼠标
 
@@ -53,7 +53,9 @@ xinput list
 xinput list-props "ELAN1010:00 04F3:3012 Touchpad"
 ```
 
-![2.png][2]
+
+
+![2](https://static.hack1s.fun/images/2021/02/24/202bbc1e991da924e.png)
 
 这里面就是触摸板的参数了
 
@@ -122,7 +124,3 @@ libinput-gestures autostart
 ```
 
 之后登出重新进入桌面即可
-
-
-[1]: http://42.193.111.59/usr/uploads/2021/01/616959750.png#vwid=782&vhei=327
-[2]: http://42.193.111.59/usr/uploads/2021/01/1985722264.png#vwid=1479&vhei=675

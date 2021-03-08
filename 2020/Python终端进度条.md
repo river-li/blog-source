@@ -8,7 +8,7 @@
 
 首先看一下库中的样式组成
 
-![category.jpg][1]
+![category](https://static.hack1s.fun/images/2021/02/24/category.jpg)
 
 总体而言有这三种类型
 
@@ -35,7 +35,7 @@ bar.finish()
 
 运行时效果如图
 
-![example.gif][2]
+![example](https://static.hack1s.fun/images/2021/02/24/example.gif)
 
 
 
@@ -50,7 +50,7 @@ bar.finish()
 ## Spin
 
 spin是另一类的样式，就是原地转圈那种样子
-![spin.gif][3]
+![spin](https://static.hack1s.fun/images/2021/02/24/spin.gif)
 
 同样先来段示例代码
 
@@ -73,9 +73,4 @@ spinner.finish()
 
 ## 注意事项
 
-在bar和 spin结束之后记得要用`bar.finish()`，否则会卡在这个界面
-
-
-[1]: http://42.193.111.59/usr/uploads/2021/01/510759994.jpg#vwid=460&vhei=166
-[2]: http://42.193.111.59/usr/uploads/2021/01/2481530743.gif#vwid=420&vhei=210
-[3]: http://42.193.111.59/usr/uploads/2021/01/2551442411.gif#vwid=420&vhei=208
+在bar和 spin结束之后记得要用`bar.finish()`，否则会卡在这个界面 

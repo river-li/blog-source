@@ -9,7 +9,23 @@ HTTP1.1中有8种规定的请求方法(method)
 curl通过指定参数`-X`可以设置请求方法
 
 ```bash
-curl -X post http://www.baidu.com
+curl -X POST http://www.baidu.com
+```
+
+
+
+需要加POST的参数的话可以使用`-d`
+
+```bash
+curl -X POST -d name=alice -d pwd=123456 http://xxx.com
+```
+
+
+
+设置请求头可以用参数`-H`
+
+```bash
+curl -H "User-Agent: curl"
 ```
 
 
@@ -21,4 +37,6 @@ curl -X post http://www.baidu.com
 ```bash
 curl --cookie "admin=1;" http://example.com
 ```
+
+
 

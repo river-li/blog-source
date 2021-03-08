@@ -69,13 +69,13 @@ model = word2vec.Word2Vec(sentences,size=200)
 
 首先需要在网上获取到中文语料库，数据来源是搜狐的新闻
 
-![1.png][1]
+![1](https://static.hack1s.fun/images/2021/02/24/1.png)
 
 这里一共有1990个文件，编号从10到1999，每个文件中为一段新闻
 
 例如10.txt：
 
-![2.png][2]
+![2](https://static.hack1s.fun/images/2021/02/24/2.png)
 
 对于获取到的语料库首先应该用jieba进行分词，将每个词用空格隔开
 
@@ -104,7 +104,7 @@ with open('result_dict.txt','a') as f:
 
 运行完毕后效果如图
 
-![3.png][3]
+![3](https://static.hack1s.fun/images/2021/02/24/3.png)
 
 之后使用gensim库中的word2vec来训练生成词向量
 
@@ -124,7 +124,7 @@ model = word2vec.Word2Vec(sentences,size=200)
 
 训练的过程如下
 
-![4.png][4]
+![4](https://static.hack1s.fun/images/2021/02/24/4.png)
 
 完成
 
@@ -134,7 +134,7 @@ model = word2vec.Word2Vec(sentences,size=200)
 
 查看与"北京"这个词意思最接近的词：
 
-![5.png][5]
+![5](https://static.hack1s.fun/images/2021/02/24/5.png)
 
 可以发现有的是地名有的是职位；
 
@@ -146,16 +146,8 @@ model = word2vec.Word2Vec(sentences,size=200)
 
 比较两个词的词向量距离：
 
-![6.png][6]
+![6](https://static.hack1s.fun/images/2021/02/24/6.png)
 
 可以看到本报和记者的距离比本报和警察的距离近很多
 
 这是由于前者经常同时出现，被判定为含义接近的缘故
-
-
-[1]: http://42.193.111.59/usr/uploads/2021/01/2307789682.png#vwid=1022&vhei=597
-[2]: http://42.193.111.59/usr/uploads/2021/01/2200170161.png#vwid=1592&vhei=661
-[3]: http://42.193.111.59/usr/uploads/2021/01/243335725.png#vwid=722&vhei=482
-[4]: http://42.193.111.59/usr/uploads/2021/01/1503432267.png#vwid=1920&vhei=1080
-[5]: http://42.193.111.59/usr/uploads/2021/01/2879119371.png#vwid=460&vhei=288
-[6]: http://42.193.111.59/usr/uploads/2021/01/3889784315.png#vwid=439&vhei=189

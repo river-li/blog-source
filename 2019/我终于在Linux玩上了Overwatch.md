@@ -10,7 +10,7 @@ linux什么都比windows好，除了游戏少这一点
 
 现在好歹也是个3年的Linux User了，于是又想起来想着搞一搞，还真就让我给装成了。
 
-<!--more--->
+
 
 ## 显卡驱动
 
@@ -48,7 +48,7 @@ Lutris可以管理linux下面各种平台的游戏，都可以在这里面运行
 
 在安装好守望先锋这样的游戏之后需要在System Options里设置
 
-{% asset_img lutris_20190702004159.png lutris_20190702004159.png %}
+![lutris_20190702004159](https://static.hack1s.fun/images/2021/02/24/lutris_20190702004159.png)
 
 同时，要发挥出显卡的性能，还需要安装DXVK
 
@@ -68,11 +68,13 @@ setup-dxvk
 
 来安装，之后在lutris里对游戏设置相应的dxvk版本即可
 
-{% asset_img lutris_20190702004621.png lutris_20190702004621.png %}
+![lutris_20190702004621](https://static.hack1s.fun/images/2021/02/24/lutris_20190702004621.png)
 
 注意在安装时选择的winee的版本，最好按照官方的推荐，不然大概率运行不了
 
-utris_20190702005257.pngwine的版本管理也可以直接在lutris中完成
+
+
+wine的版本管理也可以直接在lutris中完成
 
 
 
@@ -88,11 +90,11 @@ nvidia-smi
 
 来查看GPU的状态，如果成功在显卡跑起来会有相应的进程的
 
-{% asset_img terminal_20190702005130.png terminal_20190702005130.png %}
+![terminal_20190702005130](https://static.hack1s.fun/images/2021/02/24/terminal_20190702005130.png)
 
 最后放一张运行lutris里库的游戏图
 
-{% asset_img lutris_20190702005257.png lutris_20190702005257.png %}
+![lutris_20190702005257](https://static.hack1s.fun/images/2021/02/24/lutris_20190702005257.png)
 
 没错，我又开始下载APEX来玩了
 

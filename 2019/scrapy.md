@@ -65,9 +65,11 @@ html = etree.HTML(response.content)
 
 ### 豆瓣电影top250
 
-第一个例子，爬去豆瓣电影的排名前250
+第一个例子，爬豆瓣电影的排名前250
 
-![startproject.png][1]
+首先创建一个project
+
+![startproject](https://static.hack1s.fun/images/2021/02/24/startproject.png)
 
 创建完成后可以看到整个文件的目录结构如图
 
@@ -88,7 +90,7 @@ html = etree.HTML(response.content)
 
 用浏览器找到前250的网站，每一页是10个，一共25页
 
-![0.png][2]
+![0](https://static.hack1s.fun/images/2021/02/24/0.png)
 
 ```html
 <div class="item">
@@ -137,7 +139,7 @@ html = etree.HTML(response.content)
 
 下面编辑Items.py
 
-![1.png][3]
+![1](https://static.hack1s.fun/images/2021/02/24/1219c9d42ae312dd0.png)
 
 这个文件就是用于设置爬虫项目中的Item对象结构的
 
@@ -145,7 +147,7 @@ html = etree.HTML(response.content)
 
 下面先创建一个爬虫
 
-![2.png][4]
+![2](https://static.hack1s.fun/images/2021/02/24/257b2e6a89e67b158.png)
 
 ```python
 # -*- coding: utf-8 -*-
@@ -208,13 +210,6 @@ class MovieSpider(scrapy.Spider):
 
 这样会将结果保存在这个csv文件中
 
-![3.png][5]
+![3](https://static.hack1s.fun/images/2021/02/24/3eba55b50ff798d20.png)
 
 结果如图
-
-
-[1]: http://42.193.111.59/usr/uploads/2021/01/1831815558.png#vwid=1271&vhei=199
-[2]: http://42.193.111.59/usr/uploads/2021/01/1763255564.png#vwid=794&vhei=808
-[3]: http://42.193.111.59/usr/uploads/2021/01/3954370186.png#vwid=502&vhei=419
-[4]: http://42.193.111.59/usr/uploads/2021/01/1238348454.png#vwid=815&vhei=62
-[5]: http://42.193.111.59/usr/uploads/2021/01/3964296014.png#vwid=1313&vhei=757

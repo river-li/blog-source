@@ -73,7 +73,7 @@ IoT设备的安全分析主要面临的几个难点包括：
 
 系统主要关注的漏洞是内存破坏型漏洞以及DOS漏洞，但是这个系统也可以比较轻易的进行拓展。Karonte对固件进行分析时主要经过了五个步骤
 
-![image-20201113163407553.png][1]
+![image-20201113163407553](https://static.hack1s.fun/images/2021/02/24/image-20201113163407553.png)
 
 - Pre-processing
 
@@ -103,7 +103,4 @@ IoT设备的安全分析主要面临的几个难点包括：
 
 - Insecure Interactions Detection
 
-最后检测insecure的攻击者可能控制的数据有可能触发的危险操作，并进行报告
-
-
-[1]: http://42.193.111.59/usr/uploads/2021/01/1338523831.png#vwid=504&vhei=382
+最后检测insecure的攻击者可能控制的数据有可能触发的危险操作，并进行报告 
